@@ -1,0 +1,88 @@
+.event {
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-img {
+  object-fit: cover;
+  margin-bottom: 10px;
+  height: 300px;
+  width: 100%;
+}
+
+.event-img img {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  text-transform: capitalize;
+  margin: 0;
+}
+
+span {
+  color: gray;
+  font-size: 13px;
+}
+
+.share-icon {
+  border: 1px solid grey;
+  color: grey;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.event-left {
+  top: 100px;
+  position: fixed;
+  bottom: 10px;
+  background: #eee;
+  left: 140px;
+  width: 30vw;
+  padding: 10px;
+}
+.event-right {
+  margin-left: 30vw;
+  scroll-behavior: smooth;
+  padding: 10px;
+  position: relative;
+}
+
+.button {
+  padding: 10px;
+  display: block;
+  margin: 10px 0;
+  border: black 1px solid;
+  width: fit-content;
+  border-radius: 5px;
+  background: black;
+  color: white;
+}
+
+.button:hover {
+  color: black;
+  background: transparent;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .event {
+    display: flex;
+    flex-direction: column;
+  }
+  .event-right {
+    margin: 0;
+    padding-bottom: 30px;
+  }
+  .event-left {
+    position: static;
+    width: 100%;
+  }
+
+  .event-img {
+    height: 200px;
+    object-fit: cover;
+  }
+}

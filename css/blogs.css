@@ -1,0 +1,23 @@
+img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  height: 150px;
+}
+
+h1 {
+  text-transform: capitalize;
+}
+
+span {
+  color: gray;
+  font-size: 13px;
+}
+
+.share-icon {
+  border: 1px solid grey;
+  color: grey;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 50%;
+}

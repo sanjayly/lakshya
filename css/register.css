@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  padding-top: 85px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1 {
+  width: fit-content;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+h1::after {
+  content: "";
+  width: 70%;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 1px;
+  border-top-right-radius: 3px;
+  background: #fffaaa;
+}
+
+.form {
+  width: 350px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+}
+
+.register-img-div {
+  position: relative;
+  height: 400px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+}
+.register-img {
+  width: 300px;
+  object-fit: cover;
+  height: 100%;
+}
+
+.go-signin {
+  font-size: 12px;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+
+.form-label {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.form-data {
+  padding: 0 10px;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.form-input:focus:valid {
+  outline-color: green;
+}
+
+.form-input:focus:not(:valid) {
+  outline-color: red;
+}
+
+.form-input:not(:focus):placeholder-shown {
+  outline-color: red;
+}
+
+.register {
+  display: flex;
+  max-width: 700px;
+  min-height: 400px;
+  box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.4);
+}
+
+.button {
+  margin-top: 10px;
+  height: 40px;
+  width: fit-content;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  justify-content: center;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: white;
+  background: black;
+  border: 1px solid white;
+}
+
+.reg-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 700px) {
+  .register {
+    flex-direction: column;
+  }
+  .register-img-div {
+    height: 120px;
+  }
+}
