@@ -7,25 +7,37 @@
     <link rel="stylesheet" href="/css/register.css" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/general.css" />
-    <title>Document</title>
+    <title>Lakshya | register</title>
   </head>
   <body>
     <nav class="register-navbar" id="navbar" style="justify-content: center;">
-      <a class="logo navlink" href="/html/index.html"
-        ><img src="/images/DarkLogo.png" alt="" class="logo-img"
-      /></a>
-    </div>
-  </nav>
+        <a class="logo navlink" href="/html/index.html"
+          ><img src="/images/DarkLogo.png" alt="" class="logo-img"
+        /></a>
+      </div>
+    </nav>
     <div class="register">
       <div class="register-img-div">
         <div class="overlay">
-          <h1>Sign In here</h1>
-          <p style="font-size: 14px; text-align: left">Welcome again!</p>
+          <h1>Register here</h1>
+          <p style="font-size: 14px; text-align: left">
+            Join the Lakshya family now!
+          </p>
         </div>
         <img class="register-img" src="/images/reg-img.jpg" alt="" />
       </div>
       <div class="form">
         <form>
+          <div class="form-data">
+            <label class="form-label" for="name">Name</label>
+            <input
+              class="form-input"
+              placeholder="Enter your name"
+              type="text"
+              id="name"
+              required
+            />
+          </div>
           <div class="form-data">
             <label class="form-label" for="email">Email</label>
             <input
@@ -46,11 +58,22 @@
               required
             />
           </div>
-
           <div class="form-data">
-            <a class="button" type="submit" href="/html/index.html">Log In</a>
-            <a class="go-signin" href="/html/register.html"
-              >Don't have an account? Register</a
+            <label class="form-label" for="cpassword">Confirm Password</label>
+            <input
+              class="form-input"
+              placeholder="Confirm password"
+              type="password"
+              id="cpassword"
+              required
+            />
+          </div>
+          <div class="form-data">
+            <a class="button" type="submit" href="index.html"
+              >Register</a
+            >
+            <a class="go-signin" href="signin.html"
+              >Already have an account? Sign In here</a
             >
           </div>
         </form>
